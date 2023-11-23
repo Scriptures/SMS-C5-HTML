@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+
+</head>
+<body style="align-items: center;">
+
+    <form action="" method="post">
+        <fieldset>
+            <!--Title of fieldset-->
+            <legend style="font-size: 25px;">Personal Information</legend>
+
+            <!--Input first and Last name-->
+            <label for="fname">First Name:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" id="fname" name="fname" placeholder="John" required>
+            <label for="lname">&nbsp;&nbsp;&nbsp;Last Name:&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" id="lname" name="lname" placeholder="Doe" required><br><br>
+    
+            <!--User contact information-->
+            <label for="email">Email Address: </label>
+            <input id="email" type="email" name="email" placeholder="name@email.com" required>
+            <label for="phone">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phone Number: </label>
+            <input type="tel" id="phone" name="phone" size="10" placeholder="0245111222" required><br><br>
+
+            <!--Enter Date of Birth-->
+            <label for="age">Age: </label>
+            <input type="number" id="age" name="age" required>
+            <label for="dob">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date of Birth: </label>
+            <input type="date" id="dob" name="dob" required><br><br>
+    
+            <!--User country of residence-->
+            <label for="country">Country of Residence</label>
+            <select name="country" id="country" required>
+                <option value="" selected>Country</option>
+                <option value="Ghana">Ghana</option>
+                <option value="Kenya">Kenya</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="Zambia">Zambia</option>
+            </select>
+        </fieldset>
+            
+        <fieldset>
+            <!--Title of fieldset-->
+            <legend style="font-size: 25px;">Interest</legend>
+            <!--Radio button for selecting gender-->
+            <h5>Gender</h5>
+            <label>Male<input type="radio" name="gender" value="Male" required></label>
+            <label>Female<input type="radio" name="gender" value="Female"></label><br><br>
+
+            <!--Checkbox for multiple selection-->
+            <label>Hobbies</label>
+            <input type="checkbox" id="reading" name="reading" value="Reading">
+            <label for="reding">Reading</label><br>
+            <input type="checkbox" id="travel" name="travel" value="Travel">
+            <label for="travel">Travel</label><br>
+            <input type="checkbox" id="cycling" name="cycling" value="Cycling">
+            <label for="cycling">Cycling</label><br>
+            <input type="checkbox" id="swimming" name="swimming" value="Swimming">
+            <label for="swimming">Swimming</label><br>
+            <input type="checkbox" id="music" name="music" value="Music">
+            <label for="music">Music</label><br>
+            <input type="checkbox" id="sports" name="sports" value="Sports">
+            <label for="sports">Sports</label><br><br>
+
+            <!--Textarea-->
+            <label for="personalStatemet">Personal Statement: </label><br><br>
+            <textarea name="personalStatemet" id="personalStatemet" cols="30" rows="10" required></textarea>
+
+            <!--Submit form-->
+            <input type="submit" value="submit">
+        </fieldset>
+
+        
+    </form>
+    
+</body>
+</html>
